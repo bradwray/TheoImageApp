@@ -1,0 +1,29 @@
+{
+  "name": "theo-image-app",
+  "version": "1.0.0",
+  "description": "A React app which  searches the pixabay API based on key presses. For my toddler age son.",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@material-ui/core": "4.8.3",
+    "axios": "0.18.0",
+    "material-ui": "0.20.2",
+    "react": "16.9.0",
+    "react-dom": "16.10.0",
+    "react-scripts": "2.0.3",
+    "react-swipeable-views": "0.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

@@ -1,2 +1,0 @@
-# TheoImageApp
-Created with CodeSandbox
