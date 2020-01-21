@@ -7,7 +7,7 @@ import SwipeableViews from "react-swipeable-views";
 
 const styles = {
   tabs: {
-    background: "#fff",
+    background: "#333",
     height: "120px",
     position: "fixed",
     bottom: 0,
@@ -18,7 +18,7 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     padding: 5,
-    height: "80vh",
+    overflow: [["hidden"], "!important"],
     color: "#fff"
   },
   bg: {
