@@ -4,6 +4,9 @@ import Tab from "@material-ui/core/Tab";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 import SwipeableViews from "react-swipeable-views";
+import { bindKeyboard } from "react-swipeable-views-utils";
+
+const BindKeyboardSwipeableViews = bindKeyboard(SwipeableViews);
 
 const styles = {
   tabs: {
@@ -50,7 +53,10 @@ class Slides extends React.Component {
     let tabStart = index > this.props.images.length - 6 ? 0 : index;
     return (
       <div style={this.props.bg}>
-        <SwipeableViews index={index} onChangeIndex={this.handleChangeIndex}>
+        <BindKeyboardSwipeableViews
+          index={index}
+          onChangeIndex={this.handleChangeIndex}
+        >
           {this.props.images.map(pic => (
             <div style={styles.slide}>
               <img
@@ -59,7 +65,7 @@ class Slides extends React.Component {
               />
             </div>
           ))}
-        </SwipeableViews>
+        </BindKeyboardSwipeableViews>
         <Tabs
           fullWidth
           centered
