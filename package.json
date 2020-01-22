@@ -1,15 +1,19 @@
 {
-  "name": "theo-image-app",
+  "name": "theosimageapp",
   "version": "1.0.0",
-  "description": "A React app which  searches the pixabay API based on key presses. For my toddler age son.",
+  "description": "Image app for my toddler",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "@material-ui/core": "4.8.3",
+    "@material-ui/icons": "4.5.1",
     "axios": "0.18.0",
+    "canvas": "2.6.1",
+    "fast-average-color": "6.0.1",
     "material-ui": "0.20.2",
     "react": "16.9.0",
     "react-dom": "16.10.0",
+    "react-full-screen": "0.2.4",
     "react-scripts": "2.0.3",
     "react-swipeable-views": "0.13.3"
   },

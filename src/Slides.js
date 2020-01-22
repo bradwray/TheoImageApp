@@ -9,6 +9,7 @@ const styles = {
   tabs: {
     background: "#333",
     height: "120px",
+    width: "100%",
     position: "fixed",
     bottom: 0,
     zIndex: 1000
@@ -46,8 +47,9 @@ class Slides extends React.Component {
   render() {
     const { index } = this.state;
     console.log(this.props.images);
+    let tabStart = index > this.props.images.length - 6 ? 0 : index;
     return (
-      <div style={styles.bg}>
+      <div style={this.props.bg}>
         <SwipeableViews index={index} onChangeIndex={this.handleChangeIndex}>
           {this.props.images.map(pic => (
             <div style={styles.slide}>
@@ -56,13 +58,17 @@ class Slides extends React.Component {
           ))}
         </SwipeableViews>
         <Tabs
+          fullWidth
           centered
           value={index}
           onChange={this.handleChange}
           style={styles.tabs}
         >
-          {this.props.images.map(pic => (
-            <Tab icon={<img width="100px" src={pic.webformatURL} />} />
+          {this.props.images.slice(tabStart, tabStart + 12).map((pic, i) => (
+            <Tab
+              value={tabStart + i}
+              icon={<img height="100px" src={pic.webformatURL} />}
+            />
           ))}
         </Tabs>
       </div>
