@@ -53,7 +53,10 @@ class Slides extends React.Component {
         <SwipeableViews index={index} onChangeIndex={this.handleChangeIndex}>
           {this.props.images.map(pic => (
             <div style={styles.slide}>
-              <img height={screen.height * 0.8} src={pic.largeImageURL} />
+              <img
+                height={window.screen.height * 0.8}
+                src={pic.largeImageURL}
+              />
             </div>
           ))}
         </SwipeableViews>

@@ -214,7 +214,7 @@ class App extends Component {
           {this.state.images.length == 0 ? (
             <img
               className={classes.mat}
-              height={screen.height}
+              height={window.screen.height}
               src={PlaceMat}
             />
           ) : (
