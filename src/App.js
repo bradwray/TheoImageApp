@@ -10,7 +10,7 @@ import PlaceMat from "./IMG_7240.JPG";
 const styles = theme => ({
   root: {
     width: "100%",
-    height: "105vh",
+    height: "100vh",
     margin: "-10px",
     background: "#444",
     overflow: [["hidden"], "!important"]
